@@ -1,0 +1,62 @@
+Job 590305
+Node: a100-5
+Started: Tue Sep 15 00:17:46 AEST 2026
+Python: /home/Student/s4983285/miniconda3/envs/torch/bin/python
+PyTorch: 2.13.0+cu130
+CUDA available: True
+GPU: NVIDIA A100-PCIE-40GB
+NumPy: 2.4.6
+Pillow: 12.3.0
+Tue Sep 15 00:17:50 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:0B:00.0 Off |                    0 |
+| N/A   39C    P0             36W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Starting 20-epoch VAE training...
+Using device: cuda
+Training images: 9664
+Validation images: 1120
+Epoch 01/20 | Train: 1096792.5212 (Recon 861.8815, KL 1095930.6244) | Val: 704.7416 (Recon 615.7118, KL 89.0297)
+Saved new best model.
+Epoch 02/20 | Train: 576.6240 (Recon 502.2701, KL 74.3539) | Val: 559.1734 (Recon 515.1258, KL 44.0476)
+Saved new best model.
+Epoch 03/20 | Train: 492.9942 (Recon 467.8156, KL 25.1786) | Val: 728.6922 (Recon 678.0804, KL 50.6117)
+Epoch 04/20 | Train: 482.0893 (Recon 459.6101, KL 22.4792) | Val: 536.1374 (Recon 510.6735, KL 25.4638)
+Saved new best model.
+Epoch 05/20 | Train: 480.7057 (Recon 457.1799, KL 23.5258) | Val: 537.2178 (Recon 519.0371, KL 18.1806)
+Epoch 06/20 | Train: 493.7391 (Recon 450.4268, KL 43.3123) | Val: 479.5637 (Recon 453.6145, KL 25.9492)
+Saved new best model.
+Epoch 07/20 | Train: 467.2079 (Recon 446.2429, KL 20.9649) | Val: 575.9639 (Recon 562.3698, KL 13.5941)
+Epoch 08/20 | Train: 461.5094 (Recon 442.4314, KL 19.0780) | Val: 522.0275 (Recon 506.7611, KL 15.2664)
+Epoch 09/20 | Train: 457.9395 (Recon 439.8125, KL 18.1270) | Val: 532.4498 (Recon 519.3865, KL 13.0633)
+Epoch 10/20 | Train: 460.1926 (Recon 438.9477, KL 21.2449) | Val: 760.0019 (Recon 728.1603, KL 31.8416)
+Epoch 11/20 | Train: 457.4226 (Recon 436.4853, KL 20.9374) | Val: 817.7900 (Recon 787.9134, KL 29.8766)
+Epoch 12/20 | Train: 453.7210 (Recon 433.4169, KL 20.3040) | Val: 486.2686 (Recon 468.9556, KL 17.3130)
+Epoch 13/20 | Train: 452.0549 (Recon 431.5177, KL 20.5372) | Val: 610.6479 (Recon 593.2276, KL 17.4203)
+Epoch 14/20 | Train: 455.2880 (Recon 433.1155, KL 22.1724) | Val: 465.7949 (Recon 448.4596, KL 17.3353)
+Saved new best model.
+Epoch 15/20 | Train: 453.5230 (Recon 431.9069, KL 21.6161) | Val: 582.8628 (Recon 569.7465, KL 13.1163)
+Epoch 16/20 | Train: 454.1556 (Recon 430.5852, KL 23.5704) | Val: 709.2398 (Recon 687.4806, KL 21.7592)
+Epoch 17/20 | Train: 448.1885 (Recon 427.6389, KL 20.5496) | Val: 648.2075 (Recon 631.4054, KL 16.8022)
+Epoch 18/20 | Train: 447.9205 (Recon 427.7265, KL 20.1940) | Val: 776.5010 (Recon 747.3972, KL 29.1038)
+Epoch 19/20 | Train: 455.8850 (Recon 427.5431, KL 28.3419) | Val: 452.0451 (Recon 440.0142, KL 12.0309)
+Saved new best model.
+Epoch 20/20 | Train: 455.3265 (Recon 428.6494, KL 26.6771) | Val: 554.6508 (Recon 538.4126, KL 16.2382)
+Training finished.
+Best validation loss: 452.0451354980469
+Finished: Tue Sep 15 00:20:45 AEST 2026
